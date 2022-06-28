@@ -1,6 +1,7 @@
 {
     "extensions.ignoreRecommendations": true,
     "cSpell.words": [
-        "Npgsql"
+        "Npgsql",
+        "Xunit"
     ]
 }

@@ -1,10 +1,11 @@
 // See https://aka.ms/new-console-template for more information
+
 using database.Models;
-using DbContext = Microsoft.EntityFrameworkCore.DbContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using DbContext = Microsoft.EntityFrameworkCore.DbContext;
 
-namespace database.DBcontext
+namespace database
 {
 
     public class BloggingContext : DbContext

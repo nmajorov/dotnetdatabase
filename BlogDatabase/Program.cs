@@ -1,14 +1,11 @@
-﻿using database.DBcontext;
-using database.Models;
+﻿using database.Models;
 namespace database
 {
-
-
-    class Program
+    static class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Strarting program");
+            Console.WriteLine("Starting program");
 
             //run database operations
             using (var db = new BloggingContext())
