@@ -18,8 +18,10 @@ namespace database
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
 
+            var currentDir = Directory.GetCurrentDirectory();
+            Console.WriteLine($"current Dir: {currentDir}");
             var builder = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
+                .SetBasePath(currentDir)
                 .AddJsonFile("appsettings.json", optional: false);
 
             IConfiguration config = builder.Build();
